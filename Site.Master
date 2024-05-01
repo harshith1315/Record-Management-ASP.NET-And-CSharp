@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication1.SiteMaster" %>
+
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+        <div>
+            
+                <header>
+                    <style>
+                        .navbar {
+                            padding: 5px 10px;
+                            text-decoration: none;
+                            color: black;
+                        }
+
+                        .navbar:hover {
+                                text-decoration: underline;
+                                text-underline-offset:5px;
+                                text-decoration-thickness:2px;
+                         }
+
+                        .navbar-section {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+
+                        .tname {
+                            text-decoration: none;
+                            color: black;
+                        }
+                    </style>
+
+                    <nav class="navbar-section">
+                        <div>
+                            <a href="home.aspx" class="tname">Record Management System</a>
+                        </div>
+                        <div class="test">
+                            <a href="home.aspx" class="navbar">Home</a>
+                            <a href="addrecord.aspx" class="navbar">Add Record</a>
+                            <a href="drecord.aspx" class="navbar">Delete Record</a>
+                            <a href="updaterecord.aspx" class="navbar">Update Record</a>
+                            <a href="displayrecord.aspx" class="navbar">Display Record</a>
+                        </div>
+                    </nav>
+                </header>
+
+            
+        </div>
+    <asp:ContentPlaceHolder ID="placeholder" runat="server">
+        </asp:ContentPlaceHolder>
+</body>
+</html>
